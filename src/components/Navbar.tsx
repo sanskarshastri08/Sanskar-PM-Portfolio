@@ -3,13 +3,14 @@
 import { useState, useEffect } from "react";
 import { Mail, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/#about" },
+  { label: "Experience", href: "/#experience" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -69,30 +70,32 @@ export default function Navbar() {
           }}
         >
           {/* Avatar / Brand Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            style={{
-              width: "52px",
-              height: "52px",
-              borderRadius: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexShrink: 0,
-              cursor: "pointer",
-              boxShadow: "0 6px 16px rgba(249, 115, 22, 0.2)",
-              border: "2px solid white",
-              overflow: "hidden",
-              background: "white",
-            }}
-          >
-            <img 
-              src="/image.png" 
-              alt="Logo" 
-              style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.15)" }} 
-            />
-          </motion.div>
+          <Link href="/">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              style={{
+                width: "52px",
+                height: "52px",
+                borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexShrink: 0,
+                cursor: "pointer",
+                boxShadow: "0 6px 16px rgba(249, 115, 22, 0.2)",
+                border: "2px solid white",
+                overflow: "hidden",
+                background: "white",
+              }}
+            >
+              <img 
+                src="/image.png" 
+                alt="Logo" 
+                style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.15)" }} 
+              />
+            </motion.div>
+          </Link>
 
           {/* Desktop Links with Animated Hover State */}
           <nav 
