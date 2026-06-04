@@ -15,13 +15,15 @@ import {
   Database,
   Globe,
   TrendingUp,
-  Workflow
+  Workflow,
+  Brain
 } from "lucide-react";
 
 const SKILLS = [
   { name: "MVP Roadmap", icon: <Target size={16} />, color: "#e9d5ff" },
   { name: "SaaS Prototyping", icon: <Layers size={16} />, color: "#fef3c7" },
   { name: "AI Product Management", icon: <Cpu size={16} />, color: "#ccfbf1" },
+  { name: "LLM Oriented", icon: <Brain size={16} />, color: "#dcfce7" },
   { name: "Cross-functional Leadership", icon: <Users size={16} />, color: "#fbcfe8" },
   { name: "User Segmentation", icon: <Search size={16} />, color: "#dcfce7" },
   { name: "Journey Mapping", icon: <Workflow size={16} />, color: "#ffedd5" },

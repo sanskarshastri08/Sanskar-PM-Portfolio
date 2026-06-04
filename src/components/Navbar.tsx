@@ -188,7 +188,7 @@ export default function Navbar() {
 
           {/* Mail Button */}
           <motion.a
-            href="mailto:hello@sanskar.pm"
+            href="mailto:sanskarshastri08@gmail.com"
             whileHover={{ scale: 1.1, rotate: -5 }}
             whileTap={{ scale: 0.9 }}
             style={{

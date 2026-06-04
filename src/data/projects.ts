@@ -35,26 +35,26 @@ export const PROJECTS: Project[] = [
     tags: ["AI/ML", "LegalTech", "LLMs", "B2B SaaS"]
   },
   {
-    title: "Growstack Ai",
+    title: "GrowStack",
     slug: "growstack-ai",
     image: "/growstack-ai.png",
-    color: "#2dd4bf",
+    color: "#034737",
     role: "Co-founder & Head of Product",
     timeline: "8 Months",
-    description: "An AI-driven growth marketing automation platform that optimizes ad spend, generates high-converting creative copy, and orchestrates cross-channel campaigns using predictive audience modeling.",
-    impact: "Secured $350K in pre-seed funding; scaled platform to $20K MRR in 6 months.",
-    tags: ["AI Marketing", "Growth Tech", "Startup", "AdTech"]
+    description: "A comprehensive dashboard designed specifically for reputation managers and businesses to monitor, analyze, and respond to customer reviews across multiple platforms.",
+    impact: "Centralized review monitoring across 5+ platforms, reducing average response action times by 54%.",
+    tags: ["Reputation Tech", "B2B SaaS", "Analytics", "Dashboard"]
   },
   {
     title: "HOUS",
     slug: "hous",
     image: "/hous.png",
-    color: "#f59e0b",
+    color: "#4dcfbb",
     role: "Senior Product Manager",
     timeline: "5 Months",
-    description: "A modern co-living and rental marketplace designed for young professionals. Built a frictionless application flow, integrated background checks, and introduced split-payment rent features.",
-    impact: "Increased booking conversions by 35% and scaled listed inventory across 4 tier-1 cities.",
-    tags: ["PropTech", "Marketplace", "Fintech", "Consumer Web"]
+    description: "Welcome to Hous, the premier property management platform designed to streamline the management of properties and tenants.",
+    impact: "Streamlined multi-unit onboarding and simplified tenant billing/amenity bookings globally.",
+    tags: ["PropTech", "B2B2C", "Fintech", "Jost UI"]
   },
   {
     title: "AI Policy Generator",

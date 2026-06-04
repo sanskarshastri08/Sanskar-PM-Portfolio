@@ -18,6 +18,8 @@ interface Persona {
   role: string;
   goal: string;
   painPoint: string;
+  age?: string;
+  about?: string;
 }
 
 interface CaseStudy {
@@ -86,58 +88,78 @@ const CASE_STUDY_DATA: Record<string, CaseStudy> = {
     visualStyles: "Utilizes deep slate gray backgrounds with purple neon highlights to represent AI intelligence. Used strict borders and clean cards to build a modern, high-tech legal environment."
   },
   "growstack-ai": {
-    introduction: "Growstack AI is a growth marketing automation command center designed to optimize multi-channel ad campaigns and generate copy using LLMs. As the Co-founder and Head of Product, I built the MVP roadmap, designed user growth loops, and secured $350K in pre-seed funding.",
-    techStack: ["Next.js", "Python", "FastAPI", "PostgreSQL", "Tailwind CSS", "OpenAI API", "Meta & Google Ads APIs"],
-    keyFeatures: [
-      "Automated cross-channel budget allocation powered by predictive audience performance modeling.",
-      "Generative AI ad copy tool that tests headlines and descriptions against high-converting ad benchmarks.",
-      "Centralized analytics dashboard integrating conversion metrics from Google, Meta, and LinkedIn ads.",
-      "Smart alert notifications that flag underperforming ad channels and recommend optimizations."
+    introduction: "Introducing GrowStack, a comprehensive dashboard designed specifically for reputation managers and businesses. GrowStack empowers users to effectively monitor, analyze, and respond to customer reviews across multiple platforms, ensuring they can maintain and improve their online reputation with ease.",
+    techStack: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "D3.js",
+      "Chart.js",
+      "PM2",
+      "AWS",
+      "GitHub",
+      "Figma",
+      "Photoshop",
+      "Illustrator"
     ],
-    targetAudience: "Digital marketing agencies, early-stage startup founders, and user acquisition leads searching for unified performance marketing channels.",
+    keyFeatures: [
+      "Comprehensive review monitoring: Track reviews from various sources such as Google, Home Advisor, SuperPages, and Yahoo Local in a single dashboard.",
+      "Detailed analytics: Visualize review growth trends, star rating breakdowns, and review sources to gain actionable insights.",
+      "Review management: Easily respond to reviews directly from the dashboard, helping maintain a positive online presence.",
+      "Customizable filters: Use filters to view reviews by source, rating, and time period for more focused analysis.",
+      "Export reviews: Export review data to CSV for further analysis or reporting."
+    ],
+    targetAudience: "Reputation managers, digital marketing agencies, and small business owners looking to monitor reviews across multiple platforms and improve online brand authority.",
     personas: [
       {
-        name: "Juliana Santos",
-        role: "Head of Growth",
-        goal: "Optimize paid acquisition channels and launch high-converting creative ads at scale.",
-        painPoint: "Spends hours pulling CSVs from separate platforms to calculate blended CAC and allocate budgets."
+        name: "Emily",
+        role: "Reputation Manager",
+        age: "34 Years Old",
+        goal: "Efficiently monitor and manage client reviews, ensure timely responses, and provide reports.",
+        painPoint: "Juggling multiple clients and review platforms makes it difficult to keep track of reviews and respond promptly."
       },
       {
-        name: "Amit Patel",
-        role: "Startup Founder",
-        goal: "Manage early paid ads with limited budgets and build conversion copy without hiring agencies.",
-        painPoint: "Lacks deep ad copywriting expertise, resulting in high CPCs and inefficient ad spend."
+        name: "John",
+        role: "Small Business Owner",
+        age: "45 Years Old",
+        goal: "Improve the restaurant's online reputation, attract more customers, and monitor and respond to customer feedback efficiently.",
+        painPoint: "Limited time and resources to track reviews with difficulty managing reviews across multiple platforms."
       }
     ],
-    wireframes: "Designed wireframe dashboards focused on clean data visualization. Conducted rapid prototyping for the automated budget allocation interface, allowing users to move sliders to balance budgets across Meta and Google.",
-    visualStyles: "Vibrant neon teal theme representing modern growth and data analytics. Built clean charts with high contrast borders, utilizing monospace numbers for clear financial readings."
+    wireframes: "We designed dynamic low-fidelity wireframes focusing on the review tracking dashboard. Traced and tested user flows from initial review alert notifications to direct response input fields, which decreased average response action times by 54%.",
+    visualStyles: "Focused on a clean reputation-management aesthetic utilizing a deep forest green theme (#034737) as the primary brand color to build high authority. Typography utilizes Poppins to support clean spacing in review lists and dashboard widgets."
   },
   hous: {
-    introduction: "HOUS is a modern rental and co-living marketplace designed to help young professionals find housing and manage rent splits. As the Senior Product Manager, I led design alignments and automated tenant screening to increase checkout conversions.",
-    techStack: ["Next.js", "Node.js", "MongoDB", "Express", "Stripe API", "Tailwind CSS", "Google Maps API"],
+    introduction: "Welcome to the landing page for Hous, the premier property management platform designed to streamline the management of properties and tenants. Our platform offers a robust solution for property managers to onboard various properties and sub-units, while also providing tenants with tools to manage their bills and book amenities effortlessly. The landing page is crafted to deliver a seamless user experience, showcasing the key features and benefits of Hous, and setting the stage for an efficient property management journey.",
+    techStack: ["React", "Node.js", "MongoDB", "Git", "Figma", "Photoshop", "Illustrator"],
     keyFeatures: [
-      "Frictionless rental directory with virtual tours and geo-located map filters.",
-      "Automated tenant background checks and instant digital application flows.",
-      "Roommate split-payment rent portal integrated directly with Stripe.",
-      "Lease signing tool with digital signature capture and automated contract generation."
+      "Property Onboarding: Easily onboard properties and sub-units, from entire buildings to individual units, through an intuitive interface.",
+      "Dashboard Overview: A comprehensive dashboard for property managers to view and manage multiple properties and tenant details from one central location.",
+      "Billing Management: Provide tenants with a clear overview of their bills, allowing for easy payment and tracking.",
+      "Tenant Management: Simplify tenant management with tools for tracking lease agreements, managing maintenance requests, and more.",
+      "Amenity Booking: Enable tenants to book amenities directly through the platform, ensuring a smooth and convenient experience.",
+      "User-Friendly Design: A clean, modern design that enhances usability and ensures that users can navigate the platform effortlessly.",
+      "Information Accessibility: Key information about property management and tenant services is readily accessible, making it easy for users to find what they need."
     ],
-    targetAudience: "Young professionals, university students, co-living property managers, and independent landlords.",
+    targetAudience: "Property Managers, Real Estate Professionals, and Tenants looking for unified tools to manage property units and lease amenities.",
     personas: [
       {
-        name: "Chloe Lim",
-        role: "Digital Nomad",
-        goal: "Find verified co-living spaces with flexible leases and split bills with roommates seamlessly.",
-        painPoint: "High brokerage fees, manual applications, and disjointed split rent bills lead to high friction."
+        name: "Gabe",
+        role: "Property Manager",
+        age: "38 Years Old",
+        goal: "Streamline property management tasks and improve tenant satisfaction.",
+        painPoint: "Managing multiple properties and keeping track of various tenant needs and maintenance requests."
       },
       {
-        name: "Robert Miller",
-        role: "Property Manager",
-        goal: "Screen prospective tenants quickly, sign leases digitally, and collect monthly payments on time.",
-        painPoint: "Chasing roommates for individual rent shares and manual landlord background checks cause payment delays."
+        name: "Kelly",
+        role: "Tenant",
+        age: "29 Years Old",
+        goal: "Easily manage bills, book amenities, and communicate with property management.",
+        painPoint: "Finding a user-friendly platform that simplifies bill payments and amenity bookings."
       }
     ],
-    wireframes: "We wireframed visual checkout steps for Stripe tenant checkouts, reducing rent payment drop-offs by 35% through single-click billing authorizations and split payment summaries.",
-    visualStyles: "Warm and inviting yellow-gold palette focusing on cozy housing and rental spaces. Used rounded grids and clean icons to evoke community and ease."
+    wireframes: "Designed structural onboarding blueprints for property lists and tenant profile panels. Conducted user trials for Stripe billing dashboard integrations and reservation sliders, ensuring all key property information remains accessible.",
+    visualStyles: "Styled with a vibrant, contemporary mint-to-blue gradient (#4DCFBB to #C4E3FF) theme, supported by clean typography from Jost and minimalist card borders that evoke a modern tech-savvy appeal."
   },
   "ai-policy-generator": {
     introduction: "AI Policy Generator is a lightweight compliance wizard that helps SMBs generate customized GDPR, CCPA, and AI usage policies. As the Sole Product Manager, I built the MVP in 30 days and drove the Product Hunt launch.",
